@@ -16,7 +16,11 @@ namespace Assignment1.Controllers
             var HST = result * 0.13;
             var total = result + HST;
 
-            return "ans" + total;
+            string one = FN + " fortnights at $5.50 / FN  = $ " + result + " CAD";
+            string two = "HST 13% = $" + HST + " CAD";
+            string three = "Total = " + total;
+
+            return one + "," + two + "," + three;
         }
     }
 }
